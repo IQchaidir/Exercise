@@ -25,7 +25,6 @@ class Food {
 }
 class Resto {
   constructor(name, jarak) {
-    super(name, price);
     this.name = name;
     this.jarak = jarak;
   }
