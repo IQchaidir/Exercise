@@ -8,7 +8,7 @@ function titleToNumber(s = "") {
   return result;
 }
 
-console.log(titleToNumber("AB"));
+console.log(titleToNumber("BA"));
 
 //soal 2
 let single = (arr = []) => {
@@ -42,7 +42,7 @@ anagram("rat", "tar");
 //soal 4
 // kita akan naik se n tangga
 // cuman ada 2 step , 1 langkah dan 2 langkah
-function climbStairs(n) {
+const climbStairs = (n) => {
   if (n < 1) {
     return "Ivalid";
   }
@@ -50,16 +50,15 @@ function climbStairs(n) {
   const dp = new Array(n + 1);
   dp[0] = 1;
   dp[1] = 1;
-  console.log(dp);
 
   for (let i = 2; i <= n; i++) {
     dp[i] = dp[i - 1] + dp[i - 2];
   }
-  console.log(dp);
+
   return dp[n];
-}
+};
 
 // Example usage:
 const n = 5;
-const ways = climbStairs(n);
-console.log(`There are ${ways} distinct ways to climb ${n} steps.`);
+const way = climbStairs(n);
+console.log(`There are ${way} distinct ways to climb ${n} steps.`);
