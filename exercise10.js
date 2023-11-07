@@ -37,9 +37,9 @@ let anagram = (str1 = "", str2 = "") => {
   } else console.log("bukan anagram");
 };
 
-anagram("rat", "tar");
+anagram("race car", "car race");
 
-//soal 4
+//soal 4 (bantuan dari GPT)
 // kita akan naik se n tangga
 // cuman ada 2 step , 1 langkah dan 2 langkah
 const climbStairs = (n) => {
@@ -58,7 +58,6 @@ const climbStairs = (n) => {
   return dp[n];
 };
 
-// Example usage:
 const n = 5;
 const way = climbStairs(n);
 console.log(`There are ${way} distinct ways to climb ${n} steps.`);
