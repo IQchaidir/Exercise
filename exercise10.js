@@ -8,7 +8,7 @@ function titleToNumber(s = "") {
   return result;
 }
 
-console.log(titleToNumber("BA"));
+console.log(titleToNumber("XFD"));
 
 //soal 2
 let single = (arr = []) => {
